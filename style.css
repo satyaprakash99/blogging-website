@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.logo{
+    width: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 100;
+    border: 5px white;
+    border-radius: 50px;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+    color: black;
+    
+
+
+    
+}
+.nav-list{
+    width: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+.nav-list li{
+   list-style: none; 
+   padding: 26px 30px;
+
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'ubuntu' , sans-serif;
+}
+.rightnav{
+
+    padding:0 23px ;
+    width: 50%;
+    text-align: right;
+
+}
+#seacrch{
+    padding: 5px;
+    border: 5px solid gray;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../img/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    
+}
+.firstsection{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+
+
+
+}
+.firsthalf{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+.secondhalf{
+    width: 30%;
+
+
+}
+.secondhalf img{
+    width: 70%;
+    border: 4px solid white;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    -ms-border-radius: 150px;
+    -o-border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+.text-big{
+    font-size: 30px;
+
+}
+.text-small{
+    font-size: 15px;
+
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: 2px solid white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    background: none;
+    cursor: pointer;
+    color: white;
+}
+.btn-sm{
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: 2px solid white;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    background: none;
+    cursor: pointer;
+    color: white;
+}
+.btn-dark{
+    color: black;
+    border: 2px solid black;
+    
+}
+
+.secright{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+.paras{
+    padding: 65px;
+}
+.secleft{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    flex-direction: row-reverse;
+    font-family: 'Ubuntu', sans-serif;
+}
+.secend{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.sectionsubtag{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thumbnel img{
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 26px;
+    -webkit-border-radius: 26px;
+    -moz-border-radius: 26px;
+    -ms-border-radius: 26px;
+    -o-border-radius: 26px;
+    margin-top: 19px;
+}
+
+.contact{
+    background-color: aliceblue;
+    height: 50vh;
+}
+.text-center{
+    text-align: center;
+}
+
+.form{
+    max-width: 344px;
+    margin: auto;
+}
+
+.form input{
+    margin: 15px 0;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 15px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.burger{
+    position:absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15ox;
+
+}
+.line{
+    width: 33px;
+    background-color: white;
+    margin: 5px 3px;
+    display: none;
+}
+
+@media only screen and (max-width:1140px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #seacrch{
+        width: 100%;
+    }
+    .h-nav{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+} 
